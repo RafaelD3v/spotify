@@ -4,8 +4,8 @@ function Header() {
     return (
       <div className={styles.header} >
         <span className={styles.headerSpan} > 
-            <img src="./images/logo.png" alt="Logo"/>
-            <a href="">Ajuda</a>
+            <img className={styles.logo} src="./images/logo.png" alt="Logo"/>
+            <a className={styles.link} href="/">Ajuda</a>
         </span>
       </div>
     );

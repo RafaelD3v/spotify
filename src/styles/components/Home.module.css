@@ -1,0 +1,11 @@
+.home {
+    background: var(--blue);
+}
+
+.homeSpan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 2rem 4rem;
+}

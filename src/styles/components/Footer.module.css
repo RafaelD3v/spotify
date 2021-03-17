@@ -1,8 +1,8 @@
-.header {
+.footer {
     background: var(--black);
 }
 
-.headerSpan {
+.footerSpan {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,12 +17,16 @@
     margin: 1rem;
 }
 
-.link {
+.footerData {
     color: var(--white);
-    font-weight: 600;
     font-size: 1rem;
 }
 
-.link:hover {
+.footerData:hover {
     color: var(--green);
+}
+
+.footerMarca {
+    color: var(--white);
+    font-size: 0.8rem;
 }
