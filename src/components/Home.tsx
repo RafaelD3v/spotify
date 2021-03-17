@@ -1,15 +1,21 @@
 import styles from '../styles/components/Home.module.css';
 
 function Home() {
-    return (
-      <div className={styles.home} >
+  return (
+    <div className={styles.home} >
+      
         <span className={styles.homeSpan} >
-            <img className={styles.homeImg} src="/images/img-spotify.jpg" alt="Spotify"/>
-            <p className={styles.homeTitle}>Escutar muda tudo</p><br/>
-            <a className={styles.homeTexto}>Milhões de músicas e podcasts para explorar. E nem precisa de cartão de crédito.</a>
+          <div>
+            <h1 className={styles.homeTitle}>Escutar muda tudo</h1>
+            <p className={styles.homeText}> Milhões de músicas e podcasts para explorar.<p></p>E nem precisa de cartão de crédito.</p>
+          </div>
+      
+          <img className={styles.homeImg} src="/images/img-home.jpg" alt="Spotify" />
         </span>
-      </div>
-    );
-  }
-  
+        
+        <div className={styles.homeRow}></div>
+    </div>
+  );
+}
+
 export default Home;

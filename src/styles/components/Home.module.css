@@ -1,11 +1,44 @@
 .home {
     background: var(--blue);
+
+    width: 100%;
+    padding: 3rem;
 }
 
 .homeSpan {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    width: 100%;
+    margin: 4.5rem 3rem;
+}
 
-    margin: 2rem 4rem;
+.homeImg {
+    width: 900px;
+    height: 350px;
+
+    margin: 5rem 3rem;
+
+    border-radius: 1rem;
+}
+
+.homeTitle {
+    margin-top: 7rem;
+
+    font-size: 3rem;
+    font-weight: 700;
+
+    color: var(--green);
+}
+
+.homeText {
+    margin-top: 7rem;
+
+    font-size: 1.25rem;
+    font-weight: 500;
+
+    color: var(--green);
+}
+
+.homeRow {
+    height: 1px;
+    background: var(--green);
 }

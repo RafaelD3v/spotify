@@ -1,6 +1,6 @@
 :root {
     --black: #000;
-    --blue: #2e77d0;
+    --blue: rgb(41, 65, 171);
     --green: #1ed760;
     --white: #fff;
 }
@@ -10,7 +10,7 @@
     margin: 0;
     padding: 0;
 
-    font-family: sans-serif;
+    font-family: Roboto, sans-serif;
     font-size: 1rem;
 }
 

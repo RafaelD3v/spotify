@@ -1,5 +1,7 @@
 .footer {
     background: var(--black);
+
+    padding: 2rem;
 }
 
 .footerSpan {
