@@ -1,5 +1,12 @@
 .home {
-    background: var(--blue);
+    background-image: url(https://www-growth.scdn.co/static/home/bursts.svg);
+    background-size: 175%;
+    background-position: 46% 4%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-height: 846px;
+
+    background-color: var(--blue);
 
     width: 100%;
     padding: 3rem;
@@ -12,7 +19,7 @@
 }
 
 .homeImg {
-    width: 900px;
+    width: 800px;
     height: 350px;
 
     margin: 5rem 3rem;
