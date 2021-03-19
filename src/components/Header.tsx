@@ -7,7 +7,14 @@ function Header() {
     <div className={styles.header} >
       <span className={styles.headerSpan} >
         <img className={styles.logo} src="./images/logo.png" alt="Logo" />
-        <Link to="/Ajuda" className={styles.link}>Ajuda</Link>
+        <ul className="headerNavBar">
+          <li>
+            <Link to="/" className={styles.headerLinks}>Home</Link>
+          </li>
+          <li>
+            <Link to="/Ajuda" className={styles.headerLinks}>Ajuda</Link>
+          </li>
+        </ul>
       </span>
     </div>
   );

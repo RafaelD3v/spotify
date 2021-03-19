@@ -21,19 +21,26 @@
     margin: 1rem;
 }
 
-.links {
-    display: flex;
-    justify-content: space-between;
+.headerNavBar {
+    display: inline;
 }
 
-.link {
+li {
+    display: inline-block;
+    font-size: 16px;
+    line-height: inherit;
+    letter-spacing: 0;
+}
+
+.headerLinks {
     color: var(--white);
     font-weight: 600;
     font-size: 1rem;
 
     margin: 0rem 0.5rem;
+    padding: 28px 17px;
 }
 
-.link:hover {
+.headerLinks:hover {
     color: var(--green);
 }

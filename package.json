@@ -44,5 +44,9 @@
   "devDependencies": {
     "@types/react-router": "^5.1.12",
     "@types/react-router-dom": "^5.1.7"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/RafaelD3v/spotify.git",
+  "author": "Rafael Tavares <rafaelcontato.ce@gmail.com>",
+  "license": "MIT"
 }
