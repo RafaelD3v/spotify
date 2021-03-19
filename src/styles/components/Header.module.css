@@ -21,10 +21,17 @@
     margin: 1rem;
 }
 
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
 .link {
     color: var(--white);
     font-weight: 600;
     font-size: 1rem;
+
+    margin: 0rem 0.5rem;
 }
 
 .link:hover {
