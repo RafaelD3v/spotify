@@ -1,6 +1,6 @@
 import Header from './components/Header';
-import Home from './components/Home';
-import Ajuda from './components/Ajuda';
+import Home from './pages/Home';
+import Help from './pages/Help';
 import Footer from './components/Footer';
 
 import './styles/global.css';
@@ -15,7 +15,7 @@ function App() {
         
         <Switch>
           <Route path="/" exact={true} component={Home} />
-          <Route path="/ajuda" component={Ajuda} />
+          <Route path="/ajuda" component={Help} />
         </Switch>
 
         <Footer />

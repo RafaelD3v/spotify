@@ -1796,6 +1796,13 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.4.tgz#15925414e0ad2cd765bfef58842f7e26a7accb24"
   integrity sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==
 
+"@types/react-collapsible@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@types/react-collapsible/-/react-collapsible-2.3.1.tgz#34ffbeccb5d533498d0b491268b1eceab3baf3de"
+  integrity sha512-Ecq4EMmVZRL18w1P2HnC8zNaGIb2W1DJRY0FCvQNO5anl9hmYN0rqZ1zZ/ANcMnRfBeDWb+iTfoANR+alRjZ6w==
+  dependencies:
+    react-collapsible "*"
+
 "@types/react-dom@^17.0.0":
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.2.tgz#35654cf6c49ae162d5bc90843d5437dc38008d43"
@@ -9003,6 +9010,11 @@ react-app-polyfill@^2.0.0:
     raf "^3.4.1"
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.4.1"
+
+react-collapsible@*:
+  version "2.8.3"
+  resolved "https://registry.yarnpkg.com/react-collapsible/-/react-collapsible-2.8.3.tgz#55b2c41f670a2031d29622110bbdb66c1a10ebc9"
+  integrity sha512-SiVsLZW8qeh09eARzJ9/fwrwOlPWfAdu+vUJGQaTqVYH61XBnKqnwcTDeGZjL005hatmJSkk2CAtYtb4rz14fA==
 
 react-dev-utils@^11.0.3:
   version "11.0.4"

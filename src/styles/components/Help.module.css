@@ -1,0 +1,14 @@
+.help {
+    width: 100%;
+    margin: 4.5rem 3rem;
+}
+
+.help h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 7rem;
+}
+
+.Collapsible {
+    color: red;
+}
