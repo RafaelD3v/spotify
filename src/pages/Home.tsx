@@ -7,7 +7,7 @@ function Home() {
       <span className={styles.homeSpan} >
         <div>
           <h1 className={styles.homeTitle}>Escutar muda tudo</h1>
-          <p className={styles.homeText}> Milhões de músicas e podcasts para explorar.<p></p>E nem precisa de cartão de crédito.</p>
+          <p className={styles.homeText}> Milhões de músicas e podcasts para explorar.E nem precisa de cartão de crédito.</p>
         </div>
 
         <img className={styles.homeImg} src="/images/img-home.jpg" alt="Spotify" />

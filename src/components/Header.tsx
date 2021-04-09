@@ -12,7 +12,10 @@ function Header() {
             <Link to="/" className={styles.headerLinks}>Home</Link>
           </li>
           <li>
-            <Link to="/Ajuda" className={styles.headerLinks}>Ajuda</Link>
+            <Link to="/playlists" className={styles.headerLinks}>Playlists</Link>
+          </li>
+          <li>
+            <Link to="/ajuda" className={styles.headerLinks}>Ajuda</Link>
           </li>
         </ul>
       </span>

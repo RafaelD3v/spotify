@@ -1,0 +1,26 @@
+.playlistsContainer {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 6rem;
+  color: --background;
+}
+
+.playlistsTitle {
+  margin-top: 7rem;
+
+  font-size: 3rem;
+  font-weight: 700;
+
+  color: var(--green);
+
+  display: flex;
+  justify-content: center;
+}
+
+.playlistsList {
+  margin-top: 7rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

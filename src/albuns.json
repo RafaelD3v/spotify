@@ -1,13 +1,16 @@
 [
   {
+    "id": 1,
     "name": "Red Hot Chilli Peppers",
     "image": "./images/rhcp.png"
   },
   {
+    "id": 2,
     "name": "The Clash",
     "image": "./images/theClash.png"
   },
   {
+    "id": 3,
     "name": "Top 50 Brazil",
     "image": "./images/top50.png"
   }
