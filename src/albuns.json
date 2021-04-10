@@ -2,16 +2,36 @@
   {
     "id": 1,
     "name": "Red Hot Chilli Peppers",
-    "image": "./images/rhcp.png"
+    "image": "./images/rhcp.jpeg"
   },
   {
     "id": 2,
-    "name": "The Clash",
-    "image": "./images/theClash.png"
+    "name": "This is The Weekend",
+    "image": "./images/weekend.jpeg"
   },
   {
     "id": 3,
-    "name": "Top 50 Brazil",
-    "image": "./images/top50.png"
+    "name": "Racionais MC",
+    "image": "./images/racionais.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "This is New Order",
+    "image": "./images/neworder.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "This is The Strokes",
+    "image": "./images/strokes.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "This is Slayer",
+    "image": "./images/slayer.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "This is Ramones",
+    "image": "./images/ramones.jpeg"
   }
 ]

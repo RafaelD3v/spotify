@@ -7,7 +7,6 @@
 
 .playlistsTitle {
   margin-top: 7rem;
-
   font-size: 3rem;
   font-weight: 700;
 
@@ -19,7 +18,6 @@
 
 .playlistsList {
   margin-top: 7rem;
-
   display: flex;
   align-items: center;
   justify-content: space-around;
