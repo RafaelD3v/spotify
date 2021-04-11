@@ -2,36 +2,43 @@
   {
     "id": 1,
     "name": "Red Hot Chilli Peppers",
-    "image": "./images/rhcp.jpeg"
+    "image": "./images/rhcp.jpeg",
+    "link": "https://open.spotify.com/embed/playlist/37i9dQZF1DXbuvTm9NMIGt"
   },
   {
     "id": 2,
     "name": "This is The Weekend",
-    "image": "./images/weekend.jpeg"
+    "image": "./images/weekend.jpeg",
+    "link": "https://open.spotify.com/embed/playlist/37i9dQZF1DX6bnzK9KPvrz"
   },
   {
     "id": 3,
     "name": "Racionais MC",
-    "image": "./images/racionais.jpeg"
+    "image": "./images/racionais.jpeg",
+    "link": "https://open.spotify.com/embed/playlist/37i9dQZF1DWXlS7Zretkig"
   },
   {
     "id": 4,
     "name": "This is New Order",
-    "image": "./images/neworder.jpeg"
+    "image": "./images/neworder.jpeg",
+    "link": "https://open.spotify.com/embed/playlist/37i9dQZF1DWT79lBJfgXaq" 
   },
   {
     "id": 5,
     "name": "This is The Strokes",
-    "image": "./images/strokes.jpeg"
+    "image": "./images/strokes.jpeg",
+    "link": "https://open.spotify.com/embed/playlist/37i9dQZF1DX2MWC0R8IwhB"
   },
   {
     "id": 6,
     "name": "This is Slayer",
-    "image": "./images/slayer.jpeg"
+    "image": "./images/slayer.jpeg",
+    "link": "https://open.spotify.com/embed/playlist/37i9dQZF1DX8MtmyPcHg1L"
   },
   {
     "id": 7,
     "name": "This is Ramones",
-    "image": "./images/ramones.jpeg"
+    "image": "./images/ramones.jpeg",
+    "link": "https://open.spotify.com/embed/playlist/37i9dQZF1DWWc7UGhP4Mpw"
   }
 ]
