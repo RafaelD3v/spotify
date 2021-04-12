@@ -1,11 +1,9 @@
 import React from 'react';
 import { useParams } from "react-router-dom";
 import styles from '../styles/components/Musics.module.css'
-import Playlists from './Playlists';
-import musics from '../musics.json';
 import { Link, Route } from 'react-router-dom';
-import albuns from '../albuns.json'
-
+import albuns from '../playlists.json'
+import { link } from 'node:fs';
 
 interface ParamTypes {
   id: string
@@ -13,21 +11,21 @@ interface ParamTypes {
 
 function Musics() {
   const { id } = useParams<ParamTypes>();
-  console.log(id)
+  console.log(id);
 
-  const playList = albuns.map((album) => {
+  const album = albuns.map((album) => {
     return (
-      <Link to={"/playlists/:id" + album.id}>
-        <div key={album.id}>
-          <iframe src={album.link} width="300" height="380" frameBorder="0" allow="encrypted-media"></iframe>
+      <Link to={"/playlists/:id" + album.link}>
+        <div className={styles.musicsDiv} key={album.id}>
+          <iframe className={styles.musicsIframe} src={album.link} width="300" height="700" frameBorder="0" allow="encrypted-media"></iframe>
         </div>
       </Link>
     );
   });
 
   return (
-    <div className='Musics'>
-      { playList}
+    <div className={styles.musicsPlaylists}>
+      { album }
     </div >
   );
 }

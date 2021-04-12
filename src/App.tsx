@@ -15,12 +15,12 @@ function App() {
     <Router>
       <div>
         <Header />
-        
+
         <Switch>
           <Route path="/" exact={true} component={Home} />
           <Route path="/ajuda" exact={true} component={Help} />
-          <Route path="/playlists/:id" exact={true} component={Musics} />
           <Route path="/playlists" exact={true} component={Playlists} />
+          <Route path="/playlists/:id" exact={true} component={Musics} />
         </Switch>
 
         <Footer />

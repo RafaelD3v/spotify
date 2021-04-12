@@ -17,6 +17,9 @@ function Header() {
           <li>
             <Link to="/ajuda" className={styles.headerLinks}>Ajuda</Link>
           </li>
+          <li>
+            <Link to="/cadastro" className={styles.headerLinks}>Inscreva-se</Link>
+          </li>
         </ul>
       </span>
     </div>
