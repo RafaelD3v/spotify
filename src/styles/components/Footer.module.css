@@ -1,6 +1,6 @@
 .footer {
     background: var(--black);
-
+    width: 100vw;
     padding: 4rem 1rem;
 }
 

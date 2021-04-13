@@ -1,5 +1,6 @@
 .help {
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     margin: 4.5rem 3rem;
 }
 

@@ -1,4 +1,6 @@
 .home {
+    width: 100vw;
+    height: 100vh;
     background-image: url(https://www-growth.scdn.co/static/home/bursts.svg);
     background-size: 175%;
     background-position: 46% 4%;
@@ -8,8 +10,8 @@
 
     background-color: var(--blue);
 
-    width: 100%;
-    padding: 3rem;
+    
+    padding: 10rem;
 }
 
 .homeSpan {
@@ -22,7 +24,7 @@
     width: 800px;
     height: 350px;
 
-    margin: 5rem 3rem;
+    margin: 5rem 12rem;
 
     border-radius: 1rem;
 }
