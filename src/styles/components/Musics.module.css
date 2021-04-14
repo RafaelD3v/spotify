@@ -2,11 +2,11 @@
     margin-top: 3rem;
     height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .musicsPlaylists {
     margin: 7rem 3rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }

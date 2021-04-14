@@ -22,7 +22,7 @@ function App() {
           <Route path="/ajuda" exact={true} component={Help} />
           <Route path="/cadastro" exact={true} component={Form} />
           <Route path="/playlists" exact={true} component={Playlists} />
-          <Route path="/playlists/:id" exact={true} component={Musics} />
+          <Route path="/playlists/:id" exact={true} render={(props) => <Musics id={props.match.params.id}/>} />
         </Switch>
 
         <Footer />
