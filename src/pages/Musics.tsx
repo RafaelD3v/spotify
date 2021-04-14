@@ -1,9 +1,8 @@
 import React from 'react';
 import { useParams } from "react-router-dom";
 import styles from '../styles/components/Musics.module.css'
-import { Link, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import albuns from '../playlists.json'
-import { link } from 'node:fs';
 
 interface ParamTypes {
   id: string

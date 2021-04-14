@@ -1,6 +1,10 @@
 import styles from '../styles/components/Form.module.css';
 
 function Form() {
+  const Modal = {
+    
+  } 
+
   return (
     <div>
       <h1 className={styles.formTitle}>Inscreva-se!</h1>
