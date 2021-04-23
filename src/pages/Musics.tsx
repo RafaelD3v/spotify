@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import styles from '../styles/components/Musics.module.css'
-import albuns from '../playlists.json'
+import api from '../db.json'
 
 interface ParamTypes {
   id: string
@@ -10,7 +10,7 @@ function Musics(props: ParamTypes) {
   const { id } = useParams<ParamTypes>();
   console.log(id);
 
-  const album = albuns.filter((album) => parseInt(id) === album.id)[0];
+  const album = api.filter((album) => parseInt(id) === album.id)[0];
 
   return (
     <div className={styles.musicsPlaylists}>
