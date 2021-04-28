@@ -3,8 +3,14 @@ import styles from '../styles/components/Playlists.module.css'
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 
+interface PlayLists {
+  id: number,
+  name: string,
+  image: string,
+}
+
 export default function Playlists() {
-  const [playLists, setPlayLists] = useState([]);
+  const [playLists, setPlayLists] = useState<PlayLists[]>([]);
 
   useEffect(() => {
     axios.get("http://localhost:3001/playlists").then((res) => {
@@ -12,16 +18,22 @@ export default function Playlists() {
     })
   });
 
+    const albunsList = playLists.map((playList: PlayLists) => {
+    return (
+      <Link to={"/playlists/" + playList.id}>
+        <div key={playList.id}>
+          <h2>{playList.name}</h2>
+          <img src={playList.image} alt={playList.name} />
+        </div>
+      </Link>
+    );
+  });
+
   return (
     <div className={styles.playlistsContainer}>
-      <h1 className={styles.playlistsTitleContainer}>Grandes Playlists para melhorar seu dia!</h1>
+      <h1 className={styles.playlistsTitle}>Grandes Playlists para melhorar seu dia!</h1>
       <div className={styles.playlistsList}>
-        <Link to={"/playlists/"}>
-          <div key={  }>
-            <h2 className={styles.playlistsTitles} >{ }</h2>
-            <img src={  } alt="Imagem RHCP" />
-          </div>
-        </Link>
+        {albunsList}
       </div>
     </div>
   );

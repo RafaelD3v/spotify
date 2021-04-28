@@ -1,21 +1,34 @@
 import { useParams } from "react-router-dom";
 import styles from '../styles/components/Musics.module.css'
-import api from '../db.json'
+import axios from "axios";
+import { useEffect, useState } from "react";
+
+interface PlayList {
+  id: number,
+  name: string,
+  image: string,
+  link: string
+}
 
 interface ParamTypes {
-  id: string
+  id: string,
+  link: string
 }
 
 function Musics(props: ParamTypes) {
-  const { id } = useParams<ParamTypes>();
-  console.log(id);
+  const { id, link } = useParams<ParamTypes>();
+  const [playList, setPlayList] = useState<PlayList>();
 
-  const album = api.filter((album) => parseInt(id) === album.id)[0];
+  useEffect(() => {
+    axios.get("http://localhost:3001/playlists/"+id).then((res) => {
+      setPlayList(res.data);
+    })
+  });
 
   return (
     <div className={styles.musicsPlaylists}>
-      <div className={styles.musicsDiv} key={album.id}>
-        <iframe className={styles.musicsIframe} src={album.link} width="720" height="100%" frameBorder="0" allow="encrypted-media"></iframe>
+      <div className={styles.musicsDiv} key={id}>
+        <iframe className={styles.musicsIframe} src={link} width="720" height="100%" frameBorder="0" allow="encrypted-media"></iframe>
       </div>
     </div >
   );
