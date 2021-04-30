@@ -16,11 +16,11 @@ export default function Playlists() {
     axios.get("http://localhost:3001/playlists").then((res) => {
       setPlayLists(res.data);
     })
-  });
+  },[]);
 
     const albunsList = playLists.map((playList: PlayLists) => {
     return (
-      <Link to={"/playlists/" + playList.id}>
+      <Link to={"/playlists/" + playList.id} key={playList.id}>
         <div key={playList.id}>
           <h2>{playList.name}</h2>
           <img src={playList.image} alt={playList.name} />

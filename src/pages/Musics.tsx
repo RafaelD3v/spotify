@@ -12,11 +12,10 @@ interface PlayList {
 
 interface ParamTypes {
   id: string,
-  link: string
 }
 
 function Musics(props: ParamTypes) {
-  const { id, link } = useParams<ParamTypes>();
+  const { id } = useParams<ParamTypes>();
   const [playList, setPlayList] = useState<PlayList>();
 
   useEffect(() => {
@@ -28,7 +27,7 @@ function Musics(props: ParamTypes) {
   return (
     <div className={styles.musicsPlaylists}>
       <div className={styles.musicsDiv} key={id}>
-        <iframe className={styles.musicsIframe} src={link} width="720" height="100%" frameBorder="0" allow="encrypted-media"></iframe>
+        <iframe className={styles.musicsIframe} src={playList?.link} width="720" height="100%" frameBorder="0" allow="encrypted-media"></iframe>
       </div>
     </div >
   );
