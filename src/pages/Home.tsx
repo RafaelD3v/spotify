@@ -1,6 +1,6 @@
 import styles from '../styles/components/Home.module.css';
 
-function Home() {
+export default function Home() {
   return (
     <div className={styles.home} >
 
@@ -17,5 +17,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;

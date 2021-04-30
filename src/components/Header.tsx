@@ -2,7 +2,7 @@ import styles from '../styles/components/Header.module.css';
 
 import { Link } from "react-router-dom";
 
-function Header() {
+export default function Header() {
   return (
     <div className={styles.header} >
       <span className={styles.headerSpan} >
@@ -25,5 +25,3 @@ function Header() {
     </div>
   );
 }
-
-export default Header;

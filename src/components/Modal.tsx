@@ -1,6 +1,6 @@
 import styles from  '../styles/components/Modal.module.css'
 
-function Modal() {
+export default function Modal() {
   return (
     <div className={styles.modalOverlay}>
       <div className={styles.modal}>
@@ -9,5 +9,3 @@ function Modal() {
     </div>
   );
 }
-
-export default Modal;

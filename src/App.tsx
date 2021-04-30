@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 import './styles/global.css';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-// import Form from './pages/Form';
+import Form from './pages/Form';
 
 
 export default function App() {
@@ -20,7 +20,7 @@ export default function App() {
         <Switch>
           <Route path="/" exact={true} component={Home} />
           <Route path="/ajuda" exact={true} component={Help} />
-          {/* <Route path="/cadastro" exact={true} component={Form} /> */}
+          <Route path="/cadastro" exact={true} component={Form} />
           <Route path="/playlists" exact={true} component={Playlists} />
           <Route path="/playlists/:id" exact={true} render={(props) => <Musics id={props.match.params.id}/>} />
         </Switch>

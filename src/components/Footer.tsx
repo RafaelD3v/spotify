@@ -10,7 +10,7 @@ function dataAtualFormatada() {
   return diaF + "/" + mesF + "/" + anoF;
 }
 
-function Footer() {
+export default function Footer() {
   return (
     <div className={styles.footer} >
       <span className={styles.footerSpan} >
@@ -21,5 +21,3 @@ function Footer() {
     </div>
   );
 }
-
-export default Footer;

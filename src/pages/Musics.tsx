@@ -14,7 +14,7 @@ interface ParamTypes {
   id: string,
 }
 
-function Musics(props: ParamTypes) {
+export default function Musics(props: ParamTypes) {
   const { id } = useParams<ParamTypes>();
   const [playList, setPlayList] = useState<PlayList>();
 
@@ -32,5 +32,3 @@ function Musics(props: ParamTypes) {
     </div >
   );
 }
-
-export default Musics;

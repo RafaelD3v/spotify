@@ -1,7 +1,7 @@
 import styles from '../styles/components/Help.module.css';
 import Collapsible from 'react-collapsible';
 
-function Help() {
+export default function Help() {
   return (
     <div className={styles.help} >
       <h1>Algumas das principais dúvidas:</h1>
@@ -45,5 +45,3 @@ function Help() {
     </div>
   );
 }
-
-export default Help;
