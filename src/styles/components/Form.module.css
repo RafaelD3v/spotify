@@ -1,8 +1,82 @@
 .formContainer {
-  width: 100vw;
+  width: 90%;
   height: 100vh;
 
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.formDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formTitle {
+  color: black;
+  margin: 1rem 1rem;
+
+  font-size: 2rem;
+}
+
+
+.formDataDivInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 1rem 1rem;
+}
+
+.formDataLabel {
+  margin: 0 1rem;
+}
+
+.formDataInput {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.formData {
+  margin: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formDataMonth {
+  margin: 0 1rem;
+}
+
+.formDataGender {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formDataRadio {
+  margin: 0.7rem 0.2rem;
+}
+
+.formDataDivButton {
+  display: flex;
+  justify-content: center;
+
+  margin: 1rem 0;
+}
+
+.formDataButton {
+  margin: 0.5rem 0;
+
+  background-color: var(--green);
+  color: white;
+
+  border: 2px solid var(--green);
+  font-size: 1.5rem;
+  padding: 0.4rem 4rem;
+  border-radius: 37px;
+  
+
+  cursor: pointer;
 }

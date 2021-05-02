@@ -8,7 +8,7 @@
     },
     {
       "id": 2,
-      "name": "This is The Weekend",
+      "name": "The Weekend",
       "image": "./images/weekend.jpeg",
       "link": "https://open.spotify.com/embed/playlist/37i9dQZF1DX6bnzK9KPvrz"
     },
@@ -20,25 +20,25 @@
     },
     {
       "id": 4,
-      "name": "This is New Order",
+      "name": "New Order",
       "image": "./images/neworder.jpeg",
       "link": "https://open.spotify.com/embed/playlist/37i9dQZF1DWT79lBJfgXaq"
     },
     {
       "id": 5,
-      "name": "This is The Strokes",
+      "name": "The Strokes",
       "image": "./images/strokes.jpeg",
       "link": "https://open.spotify.com/embed/playlist/37i9dQZF1DX2MWC0R8IwhB"
     },
     {
       "id": 6,
-      "name": "This is Slayer",
+      "name": "Slayer",
       "image": "./images/slayer.jpeg",
       "link": "https://open.spotify.com/embed/playlist/37i9dQZF1DX8MtmyPcHg1L"
     },
     {
       "id": 7,
-      "name": "This is Ramones",
+      "name": "Ramones",
       "image": "./images/ramones.jpeg",
       "link": "https://open.spotify.com/embed/playlist/37i9dQZF1DWWc7UGhP4Mpw"
     }

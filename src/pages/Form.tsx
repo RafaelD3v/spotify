@@ -57,54 +57,48 @@ export default function Form() {
   }
 
   return (
-    <div>
-      <h1 className={styles.formTitle}>Inscreva-se!</h1>
-      <form className={styles.formContainer} onSubmit={submitForm}>
+    <div className={styles.formContainer}>
+      <form onSubmit={submitForm}>
         <div>
+          <h1 className={styles.formTitle}>Inscreva-se grátis e comece a curtir.</h1>
 
           {/* ------ EMAIL ---------- */}
-          <div>
-            <div>
-              <label htmlFor="email" >Qual é o seu e-mail?</label>
-            </div>
-            <input type="email"
+          <div className={styles.formDataDivInput}>
+            <input className={styles.formDataInput}
+              type="email"
               aria-invalid="false"
-              id="email" name="email"
-              placeholder="Insira seu e-mail."
+              id="email"
+              name="email"
+              placeholder="E-mail"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
 
           {/* ------ CONFIRMAR EMAIL ---------- */}
-          <div>
-            <div>
-              <label htmlFor="confirm">Confirme seu e-mail</label>
-            </div>
-            <input type="email"
+          <div className={styles.formDataDivInput}>
+            <input className={styles.formDataInput}
+              type="email"
               aria-invalid="false"
               id="confirm"
               name="confirm"
-              pattern=""
-              placeholder="Insira o e-mail novamente."
-              value=""
+              placeholder="Confirmar e-mail"
+              value={confirm}
               onChange={(e) => setConfirm(e.target.value)}
             />
 
           </div>
 
           {/* ------ SENHA ---------- */}
-          <div>
-            <div>
-              <label htmlFor="password">Crie uma senha</label>
-            </div>
-            <input type="password"
+          <div className={styles.formDataDivInput}>
+            <input className={styles.formDataInput}
+              type="password"
               aria-invalid="false"
               autoComplete="new-password"
               id="password"
               pattern=".{8,}"
               name="password"
-              placeholder="Crie uma senha."
+              placeholder="Senha"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
@@ -112,51 +106,48 @@ export default function Form() {
 
 
           {/* ------ NOME ---------- */}
-          <div>
-            <div>
-              <label htmlFor="displayname">Como devemos chamar você?</label>
-            </div>
-            <input type="text"
+          <div className={styles.formDataDivInput}>
+            <input className={styles.formDataInput}
+              type="text"
               aria-invalid="false"
               id="displayname"
               name="displayname"
-              placeholder="Insira um nome de perfil"
+              placeholder="Como devemos chamar você?"
               value={displayname}
               onChange={(e) => setDisplayname(e.target.value)}
             />
-            <div>Isso será exibido no seu perfil.</div>
           </div>
 
           {/* ------ DATA ---------- */}
           <div>
-            <div>
-              <label>Qual a sua data de nascimento?</label>
+            <div className={styles.formDataLabel}>
+              <label>Data de nascimento</label>
             </div>
-            <div data-testid="dob-parent">
-              <div data-testid="day">
-                <div>
+            <div data-testid="dob-parent" className={styles.formData}>
+
+              <span>
+                <div data-testid="day">
                   <div>
-                    <label htmlFor="day">Dia</label>
+                    <input className={styles.formDataInput}
+                      type="text"
+                      aria-invalid="false"
+                      id="day"
+                      inputMode="numeric"
+                      maxLength={2}
+                      name="day"
+                      pattern="((0?[1-9])|([12][0-9])|(3[01]))"
+                      placeholder="DD"
+                      value={day}
+                      onChange={(e) => setDay(e.target.value)}
+                    />
                   </div>
-                  <input type="text"
-                    aria-invalid="false"
-                    id="day"
-                    inputMode="numeric"
-                    maxLength={2}
-                    name="day"
-                    pattern="((0?[1-9])|([12][0-9])|(3[01]))"
-                    placeholder="DD"
-                    value={day}
-                    onChange={(e) => setDay(e.target.value)}
-                  />
                 </div>
-              </div>
-              <div data-testid="month"><div>
-                <div>
-                  <label htmlFor="month">Mês</label>
-                </div>
-                <div>
-                  <select id="month"
+              </span>
+
+              <span>
+                <div data-testid="month">
+                  <select className={styles.formDataInput}
+                    id="month"
                     name="month"
                     aria-invalid="false"
                     value={month}
@@ -176,97 +167,81 @@ export default function Form() {
                     <option value="11">novembro</option>
                     <option value="12">dezembro</option>
                   </select>
-                  <svg role="img"
-                    focusable="false"
-                    height="16"
-                    width="16"
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                  >
-                    <polyline points="20 8 12 17 4 8" fill="none" stroke="#181818" />
-                  </svg>
                 </div>
-              </div>
-              </div>
-              <div data-testid="year"><div>
-                <div>
-                  <label htmlFor="year">Ano</label>
+              </span>
+
+              <span>
+                <div data-testid="year">
+                  <input className={styles.formDataInput}
+                    type="text"
+                    aria-invalid="false"
+                    id="year"
+                    inputMode="numeric"
+                    maxLength={4}
+                    name="year"
+                    pattern="(19[0-9]{2})|(200)[0-5]"
+                    placeholder="AAAA"
+                    value={year}
+                    onChange={(e) => setYear(e.target.value)}
+                  />
                 </div>
-                <input type="text"
-                  aria-invalid="false"
-                  id="year"
-                  inputMode="numeric"
-                  maxLength={4}
-                  name="year"
-                  pattern="(19[0-9]{2})|(200)[0-5]"
-                  placeholder="AAAA"
-                  value={year}
-                  onChange={(e) => setYear(e.target.value)}
-                />
-              </div>
-              </div>
+              </span>
             </div>
             <div data-testid="dob-error-messages-parent" />
           </div>
 
           {/* ------ GENERO ---------- */}
-          <fieldset role="radiogroup">
-            <legend>Qual é o seu gênero?</legend>
-            <div>
-              <div>
-                <input type="radio"
-                  id="gender_option_male"
+          <fieldset role="radiogroup" className={styles.formDataDivInput}>
+            <span>
+              <input className={styles.formDataRadio}
+                type="radio"
+                id="gender_option_male"
+                name="gender"
+                value="male"
+                aria-invalid="false"
+                onChange={(e) => setGender(e.target.value)}
+              />
+              <label htmlFor="gender_option_male">
+                <span>Masculino</span>
+              </label>
+            </span>
+
+            <span>
+                <input className={styles.formDataRadio}
+                  type="radio"
+                  id="gender_option_female"
                   name="gender"
-                  value="male"
+                  value="female"
                   aria-invalid="false"
                   onChange={(e) => setGender(e.target.value)}
                 />
-                <label htmlFor="gender_option_male">
-                  <span></span>
-                  <span>Masculino</span>
+                <label htmlFor="gender_option_female">
+                  <span>Feminino</span>
                 </label>
-                <div>
-                  <input type="radio"
-                    id="gender_option_female"
-                    name="gender"
-                    value="female"
-                    aria-invalid="false"
-                    onChange={(e) => setGender(e.target.value)}
-                  />
-                  <label htmlFor="gender_option_female">
-                    <span></span>
-                    <span>Feminino</span>
-                  </label>
-                </div>
-                <div>
-                  <input type="radio"
-                    id="gender_option_nonbinary"
-                    name="gender"
-                    value="nonbinary"
-                    aria-invalid="false"
-                    onChange={(e) => setGender(e.target.value)}
-                  />
-                  <label htmlFor="gender_option_nonbinary">
-                    <span></span>
-                    <span>Não binário</span>
-                  </label>
-                </div>
-              </div>
-            </div>
+            </span>
+
+            <span>
+                <input className={styles.formDataRadio}
+                  type="radio"
+                  id="gender_option_nonbinary"
+                  name="gender"
+                  value="nonbinary"
+                  aria-invalid="false"
+                  onChange={(e) => setGender(e.target.value)}
+                />
+                <label htmlFor="gender_option_nonbinary">
+                  <span>Não binário</span>
+                </label>
+            </span>
           </fieldset>
 
           {/* ------ BOTAO ---------- */}
-          <div>
-            <div>
-              <button type="submit" >
-                <div>Inscrever-se</div>
-                <div>
-                </div>
-              </button>
-            </div>
+          <div className={styles.formDataDivButton}>
+            <button type="submit" className={styles.formDataButton}>
+              Inscrever-se
+            </button>
           </div>
         </div>
-
       </form>
     </div>
   );
