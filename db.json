@@ -43,5 +43,36 @@
       "link": "https://open.spotify.com/embed/playlist/37i9dQZF1DWWc7UGhP4Mpw"
     }
   ],
-  "users": []
+  "users": [
+    {
+      "email": "email@example.com",
+      "password": "12345678",
+      "displayname": "Jonas Monteiro",
+      "day": "10",
+      "month": "01",
+      "year": "1999",
+      "gender": "male",
+      "id": 1
+    },
+    {
+      "email": "Jakispero@gmail.com",
+      "password": "123456987",
+      "displayname": "Jaki",
+      "day": "29",
+      "month": "04",
+      "year": "1995",
+      "gender": "",
+      "id": 2
+    },
+    {
+      "email": "debora.ce2019@gmail.com",
+      "password": "123456987",
+      "displayname": "Debora",
+      "day": "01",
+      "month": "10",
+      "year": "2000",
+      "gender": "female",
+      "id": 3
+    }
+  ]
 }

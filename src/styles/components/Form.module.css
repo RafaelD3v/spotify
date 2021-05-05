@@ -1,5 +1,5 @@
 .formContainer {
-  width: 90%;
+  width: 100vw;
   height: 100vh;
 
   display: flex;
@@ -14,7 +14,7 @@
 }
 
 .formTitle {
-  color: black;
+  color: var(--green);
   margin: 1rem 1rem;
 
   font-size: 2rem;
@@ -74,6 +74,7 @@
 
   border: 2px solid var(--green);
   font-size: 1.5rem;
+  font-weight: bolder;
   padding: 0.4rem 4rem;
   border-radius: 37px;
   

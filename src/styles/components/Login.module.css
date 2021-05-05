@@ -1,0 +1,53 @@
+.loginContainer {
+  height: 100vh;
+  width: 90%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginTitle {
+  color: var(--green);
+  margin: 1rem 1rem;
+
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.loginDivData {
+  margin: 1rem 1rem;
+}
+
+.loginLabel {
+  color: black;
+  font-size: 1.25rem;
+}
+
+.loginInput {
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.loginDataDivButton {
+  display: flex;
+  justify-content: center;
+
+  margin: 1rem 0;
+}
+
+.loginDataButton {
+  margin: 0.5rem 0;
+
+  background-color: var(--green);
+  color: white;
+
+  border: 2px solid var(--green);
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding: 0.4rem 4rem;
+  border-radius: 37px;
+  
+
+  cursor: pointer;
+}

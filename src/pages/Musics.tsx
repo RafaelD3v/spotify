@@ -22,7 +22,7 @@ export default function Musics(props: ParamTypes) {
     axios.get("http://localhost:3001/playlists/"+id).then((res) => {
       setPlayList(res.data);
     })
-  });
+  },[]);
 
   return (
     <div className={styles.musicsPlaylists}>

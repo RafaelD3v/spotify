@@ -18,7 +18,10 @@ export default function Header() {
             <Link to="/ajuda" className={styles.headerLinks}>Ajuda</Link>
           </li>
           <li>
-            <Link to="/cadastro" className={styles.headerLinks}>Inscreva-se</Link>
+            <Link to="/register" className={styles.headerLinks}>Inscreva-se</Link>
+          </li>
+          <li>
+            <Link to="/login" className={styles.headerLinks}>Entrar</Link>
           </li>
         </ul>
       </span>

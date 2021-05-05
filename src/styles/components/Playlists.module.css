@@ -5,7 +5,7 @@
   color: --background;
 }
 
-.playlistsTitleContainer {
+.playlistsTitle {
   margin-top: 7rem;
   font-size: 3rem;
   font-weight: 700;
@@ -14,9 +14,7 @@
 
   display: flex;
   justify-content: center;
-}
 
-.playlistsTitle {
   text-decoration: none;
 }
 
