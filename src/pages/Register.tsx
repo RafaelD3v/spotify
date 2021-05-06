@@ -1,9 +1,9 @@
 import { SyntheticEvent, useState } from 'react';
 import { useHistory } from "react-router-dom";
 import axios from "axios";
-import styles from '../styles/components/Form.module.css';
+import styles from '../styles/components/Register.module.css';
 
-export default function Form() {
+export default function Register() {
   const [email, setEmail] = useState("");
   const [confirm, setConfirm] = useState("");
   const [password, setPassword] = useState("");

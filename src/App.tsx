@@ -4,7 +4,7 @@ import Help from './pages/Help';
 import Playlists from './pages/Playlists';
 import Musics from './pages/Musics';
 import Footer from './components/Footer';
-import Form from './pages/Form';
+import Register from './pages/Register';
 import Login from './pages/Login';
 import './styles/global.css';
 
@@ -19,7 +19,7 @@ export default function App() {
         <Switch>
           <Route path="/" exact={true} component={Home} />
           <Route path="/ajuda" exact={true} component={Help} />
-          <Route path="/register" exact={true} component={Form} />
+          <Route path="/register" exact={true} component={Register} />
           <Route path="/login" exact={true} component={Login} />
           <Route path="/playlists" exact={true} component={Playlists} />
           <Route path="/playlists/:id" exact={true} render={(props) => <Musics id={props.match.params.id}/>} />
